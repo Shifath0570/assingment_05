@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="p-5 bg-amber-200 h-screen flex justify-center items-center">
+        <div class="card bg-base-100 w-96 shadow-sm p-10 flex justify-center items-center">
+            <div class="space-y-5">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="assets/github-logo.png" alt="">
+                    <h1 class="text-2xl font-semibold mt-5">GitHub Issues Tracker</h1>
+                    <p class="text-sm font-normal text-[#6f6f79]">Sign in to manage your issues</p>
+                </div>
+                <div class="space-y-5">
+                    <div>
+                        <label for="" class="text-base">Username</label>
+                        <input type="text" placeholder="Enter Username" id="input_text" class="input" />
+                    </div>
+                    <div>
+                        <label for="" class="text-base">Password</label>
+                        <input type="password" placeholder="Enter Password" id="input_pin" class="input" />
+                    </div>
+                    <div>
+                        <button class="btn btn-block bg-[#4A00FF] text-[#FFFFFF]" id="signIn_btn">Sign In</button>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <hr class="w-full">
+                    <p class="mx-2">OR</p>
+                    <hr class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="signin.js"></script>
+</body>
+
+</html>
+
+
+
+
