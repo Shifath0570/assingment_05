@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="mb-15">
+        <div class="navbar bg-[#f5f7f8] shadow-sm">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl"> <img src="assets/github-logo.png" class="w-[2rem]" alt=""> GitHub
+                    Issues Tracker</a>
+            </div>
+            <div class="flex gap-2">
+                <div class="sort">
+                    <label class="input">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                                stroke="currentColor">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.3-4.3"></path>
+                            </g>
+                        </svg>
+                        <input id="search_input" class="w-[250px]" type="search" required placeholder="Search" />
+                    </label>
+                </div>
+                <div>
+                    <button class="btn btn-block bg-[#4A00FF] text-[#FFFFFF] text-sm font-medium"><i
+                            class="fa-solid fa-plus"></i>New Issue</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main_container">
+        <section class="my-5 flex justify-center items-center">
+            <div class="w-[100%] bg-[#f5f7f8] shadow-sm p-5 space-x-2">
+                <button class="btn w-24 bg-[#1447e6] text-[#FFFFFF]" onclick="switchTab('all')"
+                    id="tab_all">All</button>
+                <button class="btn w-24 bg-[#FFFFFF]" onclick="switchTab('open')" id="tab_open">Open</button>
+                <button class="btn w-24 bg-[#FFFFFF]" onclick="switchTab('closed')" id="tab_closed">Closed</button>
+            </div>
+        </section>
+
+        <section class="mt-5 flex justify-center items-center">
+            <div class="w-[100%] bg-[#f5f7f8] shadow-sm p-5 space-x-2 flex justify-between items-center">
+                <div class="flex">
+                    <button class="rounded-full p-2 bg-[#ECE4FF]"><img src="assets/Aperture.png" alt=""></button>
+                    <div class="mx-2">
+                        <h2 class="text-lg font-semibold">50 Issues</h2>
+                        <p class="text-sm font-normal text-[#6f6f79]">Track and manage your project issues</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <p class="text-sm"><i class="fa-solid fa-circle text-[#00A96E] mx-2 text-xs"></i>Open</p>
+                    <p class="text-sm mx-2"><i class="fa-solid fa-circle text-[#A855F7] mx-2 text-xs"></i>Closed</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="tracker.js"></script>
+</body>
+
+</html>
